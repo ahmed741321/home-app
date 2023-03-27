@@ -1,6 +1,13 @@
 import React from "react";
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  Image,
+  TouchableOpacity,
+  ScrollView,
+} from "react-native";
 
 const Home_Screen = ({ navigation }) => {
   return (
@@ -59,235 +66,236 @@ const Home_Screen = ({ navigation }) => {
         <View
           style={{
             height: "60%",
-            overflow: "scroll",
             width: "80%",
             marginTop: "8%",
           }}
         >
-          <TouchableOpacity
-            style={[
-              {
-                flexDirection: "row",
-                backgroundColor: "#FFCA42",
-                borderColor: "#FFCA42",
-                borderRadius: 17,
-                borderWidth: 1,
-                borderColor: "#FFCA42",
-                width: "100%",
-                height: 40,
-                justifyContent: "space-evenly",
-                alignItems: "center",
-                marginBottom: 20,
-              },
-            ]}
-          >
-            <Text
-              style={{ fontSize: 20, color: "#10405A", fontWeight: "bold" }}
+          <ScrollView showsVerticalScrollIndicator={false}>
+            <TouchableOpacity
+              style={[
+                {
+                  flexDirection: "row",
+                  backgroundColor: "#FFCA42",
+                  borderColor: "#FFCA42",
+                  borderRadius: 17,
+                  borderWidth: 1,
+                  borderColor: "#FFCA42",
+                  width: "100%",
+                  height: 40,
+                  justifyContent: "space-evenly",
+                  alignItems: "center",
+                  marginBottom: 20,
+                },
+              ]}
             >
-              Grup1
-            </Text>
-            <Text style={styles.submitText}>Katılımcı Sayısı: 5</Text>
-          </TouchableOpacity>
+              <Text
+                style={{ fontSize: 20, color: "#10405A", fontWeight: "bold" }}
+              >
+                Grup1
+              </Text>
+              <Text style={styles.submitText}>Katılımcı Sayısı: 5</Text>
+            </TouchableOpacity>
 
-          <TouchableOpacity
-            style={[
-              {
-                flexDirection: "row",
-                backgroundColor: "#FFCA42",
-                borderColor: "#FFCA42",
-                borderRadius: 17,
-                borderWidth: 1,
-                borderColor: "#FFCA42",
-                width: "100%",
-                height: 40,
-                justifyContent: "space-evenly",
-                alignItems: "center",
-                marginBottom: 20,
-              },
-            ]}
-          >
-            <Text
-              style={{ fontSize: 20, color: "#10405A", fontWeight: "bold" }}
+            <TouchableOpacity
+              style={[
+                {
+                  flexDirection: "row",
+                  backgroundColor: "#FFCA42",
+                  borderColor: "#FFCA42",
+                  borderRadius: 17,
+                  borderWidth: 1,
+                  borderColor: "#FFCA42",
+                  width: "100%",
+                  height: 40,
+                  justifyContent: "space-evenly",
+                  alignItems: "center",
+                  marginBottom: 20,
+                },
+              ]}
             >
-              Grup1
-            </Text>
-            <Text style={styles.submitText}>Katılımcı Sayısı: 5</Text>
-          </TouchableOpacity>
+              <Text
+                style={{ fontSize: 20, color: "#10405A", fontWeight: "bold" }}
+              >
+                Grup1
+              </Text>
+              <Text style={styles.submitText}>Katılımcı Sayısı: 5</Text>
+            </TouchableOpacity>
 
-          <TouchableOpacity
-            style={[
-              {
-                flexDirection: "row",
-                backgroundColor: "#FFCA42",
-                borderColor: "#FFCA42",
-                borderRadius: 17,
-                borderWidth: 1,
-                borderColor: "#FFCA42",
-                width: "100%",
-                height: 40,
-                justifyContent: "space-evenly",
-                alignItems: "center",
-                marginBottom: 20,
-              },
-            ]}
-          >
-            <Text
-              style={{ fontSize: 20, color: "#10405A", fontWeight: "bold" }}
+            <TouchableOpacity
+              style={[
+                {
+                  flexDirection: "row",
+                  backgroundColor: "#FFCA42",
+                  borderColor: "#FFCA42",
+                  borderRadius: 17,
+                  borderWidth: 1,
+                  borderColor: "#FFCA42",
+                  width: "100%",
+                  height: 40,
+                  justifyContent: "space-evenly",
+                  alignItems: "center",
+                  marginBottom: 20,
+                },
+              ]}
             >
-              Grup1
-            </Text>
-            <Text style={styles.submitText}>Katılımcı Sayısı: 5</Text>
-          </TouchableOpacity>
+              <Text
+                style={{ fontSize: 20, color: "#10405A", fontWeight: "bold" }}
+              >
+                Grup1
+              </Text>
+              <Text style={styles.submitText}>Katılımcı Sayısı: 5</Text>
+            </TouchableOpacity>
 
-          <TouchableOpacity
-            style={[
-              {
-                flexDirection: "row",
-                backgroundColor: "#FFCA42",
-                borderColor: "#FFCA42",
-                borderRadius: 17,
-                borderWidth: 1,
-                borderColor: "#FFCA42",
-                width: "100%",
-                height: 40,
-                justifyContent: "space-evenly",
-                alignItems: "center",
-                marginBottom: 20,
-              },
-            ]}
-          >
-            <Text
-              style={{ fontSize: 20, color: "#10405A", fontWeight: "bold" }}
+            <TouchableOpacity
+              style={[
+                {
+                  flexDirection: "row",
+                  backgroundColor: "#FFCA42",
+                  borderColor: "#FFCA42",
+                  borderRadius: 17,
+                  borderWidth: 1,
+                  borderColor: "#FFCA42",
+                  width: "100%",
+                  height: 40,
+                  justifyContent: "space-evenly",
+                  alignItems: "center",
+                  marginBottom: 20,
+                },
+              ]}
             >
-              Grup1
-            </Text>
-            <Text style={styles.submitText}>Katılımcı Sayısı: 5</Text>
-          </TouchableOpacity>
+              <Text
+                style={{ fontSize: 20, color: "#10405A", fontWeight: "bold" }}
+              >
+                Grup1
+              </Text>
+              <Text style={styles.submitText}>Katılımcı Sayısı: 5</Text>
+            </TouchableOpacity>
 
-          <TouchableOpacity
-            style={[
-              {
-                flexDirection: "row",
-                backgroundColor: "#FFCA42",
-                borderColor: "#FFCA42",
-                borderRadius: 17,
-                borderWidth: 1,
-                borderColor: "#FFCA42",
-                width: "100%",
-                height: 40,
-                justifyContent: "space-evenly",
-                alignItems: "center",
-                marginBottom: 20,
-              },
-            ]}
-          >
-            <Text
-              style={{ fontSize: 20, color: "#10405A", fontWeight: "bold" }}
+            <TouchableOpacity
+              style={[
+                {
+                  flexDirection: "row",
+                  backgroundColor: "#FFCA42",
+                  borderColor: "#FFCA42",
+                  borderRadius: 17,
+                  borderWidth: 1,
+                  borderColor: "#FFCA42",
+                  width: "100%",
+                  height: 40,
+                  justifyContent: "space-evenly",
+                  alignItems: "center",
+                  marginBottom: 20,
+                },
+              ]}
             >
-              Grup1
-            </Text>
-            <Text style={styles.submitText}>Katılımcı Sayısı: 5</Text>
-          </TouchableOpacity>
+              <Text
+                style={{ fontSize: 20, color: "#10405A", fontWeight: "bold" }}
+              >
+                Grup1
+              </Text>
+              <Text style={styles.submitText}>Katılımcı Sayısı: 5</Text>
+            </TouchableOpacity>
 
-          <TouchableOpacity
-            style={[
-              {
-                flexDirection: "row",
-                backgroundColor: "#FFCA42",
-                borderColor: "#FFCA42",
-                borderRadius: 17,
-                borderWidth: 1,
-                borderColor: "#FFCA42",
-                width: "100%",
-                height: 40,
-                justifyContent: "space-evenly",
-                alignItems: "center",
-                marginBottom: 20,
-              },
-            ]}
-          >
-            <Text
-              style={{ fontSize: 20, color: "#10405A", fontWeight: "bold" }}
+            <TouchableOpacity
+              style={[
+                {
+                  flexDirection: "row",
+                  backgroundColor: "#FFCA42",
+                  borderColor: "#FFCA42",
+                  borderRadius: 17,
+                  borderWidth: 1,
+                  borderColor: "#FFCA42",
+                  width: "100%",
+                  height: 40,
+                  justifyContent: "space-evenly",
+                  alignItems: "center",
+                  marginBottom: 20,
+                },
+              ]}
             >
-              Grup1
-            </Text>
-            <Text style={styles.submitText}>Katılımcı Sayısı: 5</Text>
-          </TouchableOpacity>
+              <Text
+                style={{ fontSize: 20, color: "#10405A", fontWeight: "bold" }}
+              >
+                Grup1
+              </Text>
+              <Text style={styles.submitText}>Katılımcı Sayısı: 5</Text>
+            </TouchableOpacity>
 
-          <TouchableOpacity
-            style={[
-              {
-                flexDirection: "row",
-                backgroundColor: "#FFCA42",
-                borderColor: "#FFCA42",
-                borderRadius: 17,
-                borderWidth: 1,
-                borderColor: "#FFCA42",
-                width: "100%",
-                height: 40,
-                justifyContent: "space-evenly",
-                alignItems: "center",
-                marginBottom: 20,
-              },
-            ]}
-          >
-            <Text
-              style={{ fontSize: 20, color: "#10405A", fontWeight: "bold" }}
+            <TouchableOpacity
+              style={[
+                {
+                  flexDirection: "row",
+                  backgroundColor: "#FFCA42",
+                  borderColor: "#FFCA42",
+                  borderRadius: 17,
+                  borderWidth: 1,
+                  borderColor: "#FFCA42",
+                  width: "100%",
+                  height: 40,
+                  justifyContent: "space-evenly",
+                  alignItems: "center",
+                  marginBottom: 20,
+                },
+              ]}
             >
-              Grup1
-            </Text>
-            <Text style={styles.submitText}>Katılımcı Sayısı: 5</Text>
-          </TouchableOpacity>
+              <Text
+                style={{ fontSize: 20, color: "#10405A", fontWeight: "bold" }}
+              >
+                Grup1
+              </Text>
+              <Text style={styles.submitText}>Katılımcı Sayısı: 5</Text>
+            </TouchableOpacity>
 
-          <TouchableOpacity
-            style={[
-              {
-                flexDirection: "row",
-                backgroundColor: "#FFCA42",
-                borderColor: "#FFCA42",
-                borderRadius: 17,
-                borderWidth: 1,
-                borderColor: "#FFCA42",
-                width: "100%",
-                height: 40,
-                justifyContent: "space-evenly",
-                alignItems: "center",
-                marginBottom: 20,
-              },
-            ]}
-          >
-            <Text
-              style={{ fontSize: 20, color: "#10405A", fontWeight: "bold" }}
+            <TouchableOpacity
+              style={[
+                {
+                  flexDirection: "row",
+                  backgroundColor: "#FFCA42",
+                  borderColor: "#FFCA42",
+                  borderRadius: 17,
+                  borderWidth: 1,
+                  borderColor: "#FFCA42",
+                  width: "100%",
+                  height: 40,
+                  justifyContent: "space-evenly",
+                  alignItems: "center",
+                  marginBottom: 20,
+                },
+              ]}
             >
-              Grup1
-            </Text>
-            <Text style={styles.submitText}>Katılımcı Sayısı: 5</Text>
-          </TouchableOpacity>
+              <Text
+                style={{ fontSize: 20, color: "#10405A", fontWeight: "bold" }}
+              >
+                Grup1
+              </Text>
+              <Text style={styles.submitText}>Katılımcı Sayısı: 5</Text>
+            </TouchableOpacity>
 
-          <TouchableOpacity
-            style={[
-              {
-                flexDirection: "row",
-                backgroundColor: "#FFCA42",
-                borderColor: "#FFCA42",
-                borderRadius: 17,
-                borderWidth: 1,
-                borderColor: "#FFCA42",
-                width: "100%",
-                height: 40,
-                justifyContent: "space-evenly",
-                alignItems: "center",
-                marginBottom: 20,
-              },
-            ]}
-          >
-            <Text
-              style={{ fontSize: 20, color: "#10405A", fontWeight: "bold" }}
+            <TouchableOpacity
+              style={[
+                {
+                  flexDirection: "row",
+                  backgroundColor: "#FFCA42",
+                  borderColor: "#FFCA42",
+                  borderRadius: 17,
+                  borderWidth: 1,
+                  borderColor: "#FFCA42",
+                  width: "100%",
+                  height: 40,
+                  justifyContent: "space-evenly",
+                  alignItems: "center",
+                  marginBottom: 20,
+                },
+              ]}
             >
-              Grup1
-            </Text>
-            <Text style={styles.submitText}>Katılımcı Sayısı: 5</Text>
-          </TouchableOpacity>
+              <Text
+                style={{ fontSize: 20, color: "#10405A", fontWeight: "bold" }}
+              >
+                Grup1
+              </Text>
+              <Text style={styles.submitText}>Katılımcı Sayısı: 5</Text>
+            </TouchableOpacity>
+          </ScrollView>
         </View>
       </View>
     </View>
