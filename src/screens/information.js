@@ -11,13 +11,13 @@ import {
 } from "react-native";
 import React from "react";
 
-const Register_Screen = ({ navigation }) => {
+const information = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <View style={{ position: "absolute", top: 35, left: 10 }}>
         <TouchableOpacity
           onPress={() => {
-            navigation.navigate("Login");
+            navigation.navigate("Home");
           }}
         >
           <Image
@@ -30,7 +30,15 @@ const Register_Screen = ({ navigation }) => {
           />
         </TouchableOpacity>
       </View>
-      <Text style={{padding: 28, fontSize: 28, color: '#1F5460', marginEnd: 160}}>Bize Katıl</Text>
+      <Image
+        source={require("../../assets/219969-2.png")}
+        style={{
+          width: 100,
+          height: 100,
+          marginBottom: 20,
+          marginTop: 20,
+        }}
+      />
       <View
         style={{
           width: "95%",
@@ -86,10 +94,7 @@ const Register_Screen = ({ navigation }) => {
               marginTop: 11,
             }}
           />
-          <TextInput
-            style={styles.input}
-            placeholder="Kullanıcı Adı"
-          ></TextInput>
+          <TextInput style={styles.input} placeholder="Kullanıcı Adı"></TextInput>
         </View>
         <View style={{ width: "100%" }}>
           <Image
@@ -128,10 +133,10 @@ const Register_Screen = ({ navigation }) => {
         >
           <View style={{ width: "48%" }}>
             <Image
-              source={require("../../assets/icons8_street_view_32.png")}
-              style={{
-                width: 19,
-                height: 25,
+            source={require("../../assets/icons8_street_view_32.png")}
+            style={{
+              width: 19,
+              height: 25,
                 marginBottom: 20,
                 marginLeft: 15,
                 position: "absolute",
@@ -195,15 +200,13 @@ const Register_Screen = ({ navigation }) => {
               marginTop: 11,
             }}
           />
-          <TextInput
-            style={styles.input}
-            placeholder="Şifre Tekrar"
-          ></TextInput>
+          <TextInput style={styles.input} placeholder="Şifre Tekrar"></TextInput>
         </View>
 
         <View
           style={{
             width: "100%",
+
           }}
         >
           <TouchableOpacity style={styles.submit}>
@@ -249,4 +252,4 @@ const styles = StyleSheet.create({
     fontSize: 17,
   },
 });
-export default Register_Screen;
+export default information;

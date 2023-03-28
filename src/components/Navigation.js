@@ -7,6 +7,8 @@ import Home_Screen from "../screens/Home_Screen";
 import Login_Screen from "../screens/Login_Screen";
 import Register_Screen from "../screens/Register_Screen";
 import Start from "../screens/Start";
+import Raporlar_Screen from "../screens/Raporlar_Screen";
+import information from "../screens/information";
 
 const Stack = createNativeStackNavigator();
 
@@ -14,16 +16,9 @@ const Navigation = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-
-      <Stack.Screen
-          name="Login"
-          component={Login_Screen}
-          options={{ headerShown: false }}
-        />
-        
         <Stack.Screen
-          name="Start"
-          component={Start}
+          name="information"
+          component={information}
           options={{ headerShown: false }}
         />
         <Stack.Screen
@@ -31,14 +26,28 @@ const Navigation = () => {
           component={Home_Screen}
           options={{ headerShown: false }}
         />
+        <Stack.Screen
+          name="Login"
+          component={Login_Screen}
+          options={{ headerShown: false }}
+        />
 
+        <Stack.Screen
+          name="Start"
+          component={Start}
+          options={{ headerShown: false }}
+        />
+
+        <Stack.Screen
+          name="Raporlar"
+          component={Raporlar_Screen}
+          options={{ headerShown: false }}
+        />
         <Stack.Screen
           name="Register"
           component={Register_Screen}
           options={{ headerShown: false }}
         />
-
-
       </Stack.Navigator>
     </NavigationContainer>
   );

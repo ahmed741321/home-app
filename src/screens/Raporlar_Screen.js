@@ -9,14 +9,14 @@ import {
   ScrollView,
 } from "react-native";
 
-const Home_Screen = ({ navigation }) => {
+const Raporlar_Screen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <View style={styles.containerr}>
         <View style={{ position: "absolute", top: 35, left: 10 }}>
           <TouchableOpacity
             onPress={() => {
-              navigation.navigate("Login");
+              navigation.navigate("Home");
             }}
           >
             <Image
@@ -346,4 +346,4 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
 });
-export default Home_Screen;
+export default Raporlar_Screen;
