@@ -12,10 +12,9 @@ import {
 import React from "react";
 import { useState } from "react";
 
-const Login_Screen = ({ navigation }) => {
+const Add_user_Screen = ({ navigation }) => {
   var [email, setEmail] = useState("");
   var [password, setPassword] = useState("");
-
   return (
     <View style={styles.container}>
       <View style={{ position: "absolute", top: 35, left: 10, zIndex: 2 }}>
@@ -227,4 +226,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Login_Screen;
+export default Add_user_Screen;

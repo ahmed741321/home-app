@@ -90,6 +90,9 @@ const Home_Screen = ({ navigation }) => {
         >
           <ScrollView showsVerticalScrollIndicator={false}>
             <TouchableOpacity
+              onPress={() => {
+                navigation.navigate("chat");
+              }}
               style={[
                 {
                   flexDirection: "row",
@@ -205,6 +208,9 @@ const Home_Screen = ({ navigation }) => {
                   marginBottom: 20,
                 },
               ]}
+              onPress={() => {
+                navigation.navigate("chat");
+              }}
             >
               <Text
                 style={{ fontSize: 20, color: "#10405A", fontWeight: "bold" }}
